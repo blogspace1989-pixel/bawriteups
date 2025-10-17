@@ -5,8 +5,8 @@ description: Minimal, writer-first blog. No fluff. Just essays.
 author:
   name: Joby
   email: 
-url: ""  # set to https://<yourusername>.github.io after first deploy or custom domain
-baseurl: ""  # leave empty for user.github.io root sites
+url: "https://blogspace1989-pixel.github.io"
+baseurl: "/bawriteups"
 theme: minima
 
 # Show About in the header
