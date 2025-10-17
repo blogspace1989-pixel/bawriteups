@@ -1,0 +1,39 @@
+title: JBAS — Notes
+tagline: Straight‑talk writing on product, investing, and life.
+description: Minimal, writer-first blog. No fluff. Just essays.
+author:
+  name: Joby
+  email: 
+url: ""  # set to https://<yourusername>.github.io after first deploy or custom domain
+baseurl: ""  # leave empty for user.github.io root sites
+theme: minima
+
+# Show About in the header
+header_pages:
+  - about.md
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima theme options
+minima:
+  skin: classic  # built-in; stays minimal
+  social_links:
+    - { platform: x, user_url: "https://x.com/JBAS" }
+    - { platform: github, user_url: "https://github.com/" }
+    - { platform: youtube, user_url: "https://youtube.com/@JBAS" }
+    - { platform: substack, user_url: "https://jbas.substack.com" }
+
+# Collections / Permalinks
+permalink: /:categories/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Build settings
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
