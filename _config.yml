@@ -1,39 +1,35 @@
-theme: minima
 title: JBAS — Notes
-tagline: Straight‑talk writing on product, investing, and life.
+tagline: Straight-talk writing on product, investing, and life.
 description: Minimal, writer-first blog. No fluff. Just essays.
 author:
   name: Joby
-  email: 
-url: "https://blogspace1989-pixel.github.io"
-baseurl: "/bawriteups"
+  email:
+
 theme: minima
 
-# Show About in the header
+url: "https://blogspace1989-pixel.github.io"
+baseurl: "/bawriteups"
+
 header_pages:
   - about.md
 
-# Plugins supported by GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Minima theme options
 minima:
-  skin: classic  # built-in; stays minimal
+  skin: classic
   social_links:
     - { platform: x, user_url: "https://x.com/JBAS" }
     - { platform: github, user_url: "https://github.com/" }
     - { platform: youtube, user_url: "https://youtube.com/@JBAS" }
     - { platform: substack, user_url: "https://jbas.substack.com" }
 
-# Collections / Permalinks
 permalink: /:categories/:title/
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Build settings
 exclude:
   - README.md
   - Gemfile
