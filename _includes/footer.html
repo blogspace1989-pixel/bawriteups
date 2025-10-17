@@ -1,0 +1,28 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="wrapper" style="text-align:center; font-size:0.95em; color:#666;">
+    <div style="margin-bottom:6px; font-weight:600;">
+      {{ site.title | escape }}
+    </div>
+
+    {% assign author_name = site.author.name | default: site.author | default: "" %}
+    {% if author_name %}
+      <div style="margin-bottom:6px;">© {{ site.time | date: "%Y" }} {{ author_name }}</div>
+    {% endif %}
+
+    {% if site.description %}
+      <div style="margin-bottom:10px;">{{ site.description | escape }}</div>
+    {% endif %}
+
+    <div style="margin-top:6px;">
+      <a href="{{ site.baseurl }}/about/">About</a>
+      {% if site.minima.social_links %}
+        ·
+        {% for entry in site.minima.social_links %}
+          <a href="{{ entry.user_url }}" target="_blank" rel="noopener">{{ entry.platform | capitalize }}</a>{% unless forloop.last %} · {% endunless %}
+        {% endfor %}
+      {% endif %}
+      · <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+    </div>
+  </div>
+</footer>
